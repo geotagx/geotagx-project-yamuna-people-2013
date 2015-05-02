@@ -1,0 +1,55 @@
+{
+	"name":"Yamuna People",
+	"short_name":"yamuna_people",
+	"category":"Yamuna Monsoon Flooding 2013",
+	"description":"Who is in the photos? What are they doing?",
+	"why":"With this project, we hope to extract data on the people affected by the 2013 flooding of the Yamuna river.",
+	"questions":[
+		{
+			"id":1,
+			"title":"Can you see people in the photo?",
+			"type":"binary",
+			"answer":{
+				"saved_as":"waterPeople"
+			},
+			"branch":[
+				{"no":"finish"}
+			]
+		},
+		{
+			"id":2,
+			"title":"Are they ...",
+			"type":"multiple_choice",
+			"answer":{
+				"saved_as":"waterPeopleType",
+				"choices":[
+					{"Men":"men?"},
+					{"Women":"women?"},
+					{"Children":"children?"},
+					{"Babies":"babies?"}
+				]
+			}
+		},
+		{
+			"id":3,
+			"title":"What are they doing?",
+			"type":"multiple_choice",
+			"answer":{
+				"saved_as":"waterPeopleActivities",
+				"choices":[
+					{"Working":"Working in fields"},
+					{"Dwellings":"Around dwellings"},
+					{"Religious":"Performing religious activities"},
+					{"Cooking":"Cooking"},
+					{"Travelling":"Travelling"},
+					{"RiverWater":"Collecting water from a river"},
+					{"PumpWater":"Collecting water from a water pump or similar"},
+					{"Washing":"Washing themselves"},
+					{"WashingClothes":"Washing clothing or equipment"},
+					{"Standing":"Standing around, watching"},
+					{"Other":"Other"}
+				]
+			}
+		}
+	]
+}
