@@ -1,0 +1,36 @@
+{
+	"tutorial":[
+		{
+			"image":"http://blogs.r.ftdata.co.uk/photo-diary/files/2013/06/YAMUNA.jpg",
+			"image_source":"http://webcache.googleusercontent.com/search?q=cache:Vrvp8dHK4NAJ:blogs.ft.com/photo-diary/2013/06/flooding-of-the-yamuna-river/+&cd=1&hl=en&ct=clnk&gl=uk",
+			"assertions":{
+				"1":{
+					"expects":"yes",
+					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
+					"messages":{
+						"yes":"Well done! There are people in this photo.",
+						"no":"Are you sure there are no people in this photo?"
+					}
+				},
+				"2":{
+					"expects":"children",
+					"default_message":"Are you sure? If you do not know what to look for, check out the help for more information.",
+					"messages":{
+						"children":"Correct! The person in this photo is a child.",
+						"unknown":"Try again. If you are not sure what to look for, check out the help for more information.",
+						"notclear":"Try again. If you are not sure what to look for, check out the help for more information."
+					}
+				},
+				"3":{
+					"expects":"carryingbelongings",
+					"default_message":"Are you sure? If you look at the photo's context, maybe you could find some hints.",
+					"messages":{
+						"carryingbelongings":"Well done! The child in this photo is carrying their belongings. If you check out the photo's context, you can read the article which describes what the girl is doing.",
+						"unknown":"Try again. If you are not sure what to look for, check out the help for more information.",
+						"notclear":"Try again. If you are not sure what to look for, check out the help for more information."
+					}
+				}
+			}
+		}
+	]
+}

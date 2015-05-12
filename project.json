@@ -46,6 +46,7 @@
 					{"PumpWater":"Collecting water from a water pump or similar"},
 					{"Washing":"Washing themselves"},
 					{"WashingClothes":"Washing clothing or equipment"},
+					{"CarryingBelongings":"Carrying belongings"},
 					{"Standing":"Standing around, watching"},
 					{"Other":"Other"}
 				]
