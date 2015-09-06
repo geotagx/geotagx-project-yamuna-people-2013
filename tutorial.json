@@ -4,7 +4,7 @@
 			"image":"http://blogs.r.ftdata.co.uk/photo-diary/files/2013/06/YAMUNA.jpg",
 			"image_source":"http://webcache.googleusercontent.com/search?q=cache:Vrvp8dHK4NAJ:blogs.ft.com/photo-diary/2013/06/flooding-of-the-yamuna-river/+&cd=1&hl=en&ct=clnk&gl=uk",
 			"assertions":{
-				"1":{
+				"waterPeople":{
 					"expects":"yes",
 					"default_message":"Try again. If you are not sure what to look for, check out the help for more information.",
 					"messages":{
@@ -12,7 +12,7 @@
 						"no":"Are you sure there are no people in this photo?"
 					}
 				},
-				"2":{
+				"waterPeopleType":{
 					"expects":"children",
 					"default_message":"Are you sure? If you do not know what to look for, check out the help for more information.",
 					"messages":{
@@ -21,7 +21,7 @@
 						"notclear":"Try again. If you are not sure what to look for, check out the help for more information."
 					}
 				},
-				"3":{
+				"waterPeopleActivities":{
 					"expects":"carryingbelongings",
 					"default_message":"Are you sure? If you look at the photo's context, maybe you could find some hints.",
 					"messages":{

@@ -4,51 +4,90 @@
 	"category":"Yamuna Monsoon Flooding 2013",
 	"description":"Who is in the photos? What are they doing?",
 	"why":"With this project, we hope to extract data on the people affected by the 2013 flooding of the Yamuna river.",
-	"questions":[
+	"questionnaire":[
 		{
-			"id":1,
-			"title":"Can you see people in the photo?",
+			"question":"Can you see people in the photo?",
+			"key":"waterPeople",
 			"type":"binary",
-			"answer":{
-				"saved_as":"waterPeople"
-			},
-			"branch":[
-				{"no":"finish"}
-			]
+			"branch":{
+				"no":"end"
+			}
 		},
 		{
-			"id":2,
-			"title":"Are they ...",
-			"type":"multiple_choice",
-			"answer":{
-				"saved_as":"waterPeopleType",
-				"choices":[
-					{"Men":"men?"},
-					{"Women":"women?"},
-					{"Children":"children?"},
-					{"Babies":"babies?"}
+			"question":"Are they ...",
+			"key":"waterPeopleType",
+			"type":"checklist",
+			"parameters":{
+				"options":[
+					{
+						"label":"men?",
+						"value":"Men"
+					},
+					{
+						"label":"women?",
+						"value":"Women"
+					},
+					{
+						"label":"children?",
+						"value":"Children"
+					},
+					{
+						"label":"babies?",
+						"value":"Babies"
+					}
 				]
 			}
 		},
 		{
-			"id":3,
-			"title":"What are they doing?",
-			"type":"multiple_choice",
-			"answer":{
-				"saved_as":"waterPeopleActivities",
-				"choices":[
-					{"Working":"Working in fields"},
-					{"Dwellings":"Around dwellings"},
-					{"Religious":"Performing religious activities"},
-					{"Cooking":"Cooking"},
-					{"Travelling":"Travelling"},
-					{"RiverWater":"Collecting water from a river"},
-					{"PumpWater":"Collecting water from a water pump or similar"},
-					{"Washing":"Washing themselves"},
-					{"WashingClothes":"Washing clothing or equipment"},
-					{"CarryingBelongings":"Carrying belongings"},
-					{"Standing":"Standing around, watching"},
-					{"Other":"Other"}
+			"question":"What are they doing?",
+			"key":"waterPeopleActivities",
+			"type":"checklist",
+			"parameters":{
+				"options":[
+					{
+						"label":"Working in fields",
+						"value":"Working"
+					},
+					{
+						"label":"Around dwellings",
+						"value":"Dwellings"
+					},
+					{
+						"label":"Performing religious activities",
+						"value":"Religious"
+					},
+					{
+						"label":"Cooking",
+						"value":"Cooking"
+					},
+					{
+						"label":"Travelling",
+						"value":"Travelling"
+					},
+					{
+						"label":"Collecting water from a river",
+						"value":"RiverWater"
+					},
+					{
+						"label":"Collecting water from a water pump or similar",
+						"value":"PumpWater"
+					},
+					{
+						"label":"Washing themselves",
+						"value":"Washing"
+					},
+					{
+						"label":"Washing clothing or equipment",
+						"value":"WashingClothes"
+					},
+					{
+						"label":"Carrying belongings",
+						"value":"CarryingBelongings"
+					},
+					{
+						"label":"Standing around, watching",
+						"value":"Standing"
+					}
 				]
 			}
 		}
